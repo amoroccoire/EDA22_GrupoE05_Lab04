@@ -16,6 +16,10 @@ public class DoubleLinkedList<T> {
             nodo.setPreviousNode(cola);
             cola = nodo;
         }
-    
+        else {
+            cabeza = nodo;
+            cola = nodo;
+        }
     }
+
 }
