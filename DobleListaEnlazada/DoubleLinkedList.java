@@ -28,4 +28,18 @@ public class DoubleLinkedList<T> {
         nodo2.setDato(aux);
     }
 
+    public String toString(){
+        String cadena = "";
+
+        Node<T> puntero = cabeza;
+        if (cabeza == null)
+            return "Lista vacia";
+        
+        while (puntero != null){
+            cadena += puntero.getDato() + " ";
+            puntero = puntero.getNextNode();
+        }
+        return cadena;
+    }
+
 }
