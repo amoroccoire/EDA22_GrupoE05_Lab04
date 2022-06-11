@@ -1,4 +1,4 @@
-public class LinkedList<E> implements TDAList<E> {
+public class LinkedList<E> implements List<E> {
   private Node<E> raiz;
   private int tamaño;
 
@@ -11,10 +11,10 @@ public class LinkedList<E> implements TDAList<E> {
     return this.raiz == null;
   }
 
-  public Node<T> get(int indice) {
-    Node<T> aux= this.raiz;
+  public Node<E> get(int indice) {
+    Node<E> aux= this.raiz;
     for(int i=0; i<indice; i++)
-        aux=aux.getNextNode();
+        aux=aux.getNext();
     return aux;
   }
 
@@ -24,14 +24,14 @@ public class LinkedList<E> implements TDAList<E> {
   }
 
   public void remove(int indice) {
-    if(indice<tamano) {
+    if(indice<this.tamaño) {
       if(indice==0)
-	raiz=raiz.getNextNode();
+	raiz=raiz.getNext();
       else {
-	Node<T> anterior=this.get(indice-1);
-	anterior.setNextNode(this.get(indice+1));
+	Node<E> anterior=this.get(indice-1);
+	anterior.setNext(this.get(indice+1));
       }
-      tamano--;
+      this.tamaño--;
     }
   }
 
