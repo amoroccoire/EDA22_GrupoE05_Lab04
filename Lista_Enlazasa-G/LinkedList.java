@@ -1,42 +1,43 @@
 public class LinkedList<E> implements TDAList<E> {
-  private Node<E> first;
+  private Node<E> raiz;
+  private int tamaño;
 
   public LinkedList() {
-    this.first = null;
+    this.raiz = null;
+    tamaño = 0;
   }
 
   public boolean isEmpty() {
-    return this.first == null;
+    return this.raiz == null;
   }
 
-  public boolean search(E x) {
-    Node<E> aux = this.first;
-    while (aux != null && !aux.getData().equals(x)) {
-      aux = aux.getNext();
-    }
-    if (aux != null)
-      return true;
-    return false;
+  public Node<T> get(int indice) {
+    Node<T> aux= this.raiz;
+    for(int i=0; i<indice; i++)
+        aux=aux.getNextNode();
+    return aux;
   }
 
-  public void remove(E x) {
-    Node<E> aux = this.first;
-    if (!this.isEmpty()) {
-      if (aux != null && aux.getData().equals(x)) {
-	this.first = aux.getNext();
-	aux.setNext(null);
-      } else {
+  public void insertFirst(E x) {
+    this.raiz = new Node<E>(x, this.raiz);
+    this.tamaño+=1;
+  }
 
-	for (; aux.getNext() != null && !aux.getNext().getData().equals(x); aux = aux.getNext())
-	  ;
-	aux.setNext(aux.getNext().getNext());
+  public void remove(int indice) {
+    if(indice<tamano) {
+      if(indice==0)
+	raiz=raiz.getNextNode();
+      else {
+	Node<T> anterior=this.get(indice-1);
+	anterior.setNextNode(this.get(indice+1));
       }
+      tamano--;
     }
   }
 
   public void insert(E x, int p) {
     int count = 0;
-    Node<E> aux = this.first;
+    Node<E> aux = this.raiz;
     while (aux != null && count < p - 2) {
       aux = aux.getNext();
       count++;
@@ -47,16 +48,13 @@ public class LinkedList<E> implements TDAList<E> {
       aux.setNext(new Node<E>(x,aux.getNext()));
     } else
       System.out.println("No existe dicha posición");
-
-
   }
 
   public String toString() {
     String str = "";
-    for (Node<E> aux = this.first; aux != null; aux = aux.getNext()) {
+    for (Node<E> aux = this.raiz; aux != null; aux = aux.getNext()) {
       str += aux.getData() + ",";
     }
     return str;
   }
-
 }
