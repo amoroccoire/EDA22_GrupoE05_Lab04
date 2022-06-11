@@ -1,4 +1,4 @@
-public class LinkedList<E> implements List<E> {
+public class LinkedList<E extends Comparable<E>> implements List<E> {
   private Node<E> raiz;
   private int tamaño;
 
@@ -16,6 +16,10 @@ public class LinkedList<E> implements List<E> {
     for(int i=0; i<indice; i++)
         aux=aux.getNext();
     return aux;
+  }
+
+  public int getTamaño(){
+    return this.tamaño;
   }
 
   public void insertFirst(E x) {
