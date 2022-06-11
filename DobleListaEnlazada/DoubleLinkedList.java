@@ -22,4 +22,10 @@ public class DoubleLinkedList<T> {
         }
     }
 
+    public void intercambiar(Node<T> nodo1, Node<T> nodo2){
+        T aux = nodo1.getDato();
+        nodo1.setDato(nodo2.getDato());
+        nodo2.setDato(aux);
+    }
+
 }
