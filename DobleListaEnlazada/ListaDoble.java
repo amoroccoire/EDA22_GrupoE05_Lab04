@@ -13,7 +13,7 @@ public class ListaDoble {
         int num = sc.nextInt();
 
         ArrayList<DoubleLinkedList> listasD = new ArrayList<DoubleLinkedList>();
-        String archivo = "archivo1.txt";
+        String archivo = "archivo2.txt";
         PrintWriter oS = new PrintWriter(archivo);
 
         for (int i = 1; i <= num; i++) {
