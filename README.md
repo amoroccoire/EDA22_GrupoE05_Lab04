@@ -66,11 +66,11 @@
           <ul>
           <li>I. Utilizar el tipo generico de Lista Enlazada para generar los peores casos y ejecutar el algoritmo de ordenamiento.
              <ul>
-	     <li><img src="https://i.postimg.cc/6qxqNWVg/Lista-Enlazada.jpg?raw=true" alt="image_1" style witdh="150"; height="150"/></li>
+	     <li><img src="https://i.postimg.cc/6qxqNWVg/Lista-Enlazada.jpg?raw=true"></li>
  	     <li>En este gráfico se muestra el tiempo que demora en ordenar cien mil listas del mas facil al mas complejo. </li>
 	    </ul>
             <ul>
-	     <li><img src="https://i.postimg.cc/SxHfz8mM/imagen-2022-06-12-181131030.pngraw=true" alt="image_1" style witdh="150"; height="150"/></li>
+	     <li><img src="https://i.postimg.cc/SxHfz8mM/imagen-2022-06-12-181131030.pngraw=true"></li>
  	     <li>En este gráfico se muestra el tiempo que demora en ordenar 1000 listas del mas facil al mas complejo. </li>
 	    </ul>
            </li>
@@ -78,7 +78,7 @@
           <ul>
           <li>II. Utilizar el tipo generico de Doble Lista Enlazada para generar los peores casos y ejecutar el algoritmo de ordenamiento.
           <ul>
-	     <li><img src="img/isEmpty.png?raw=true" alt="image_1" style witdh="150"; height="100"/></li>
+	     <li><img src="img/isEmpty.png?raw=true" alt="image_1"></li>
 	      </ul>
            <li>En este metodo lo unico que sea hace es comparar la raiz, ya que si esta se encuentra vacia nos indica que no hay ningun elemento en la pila.</li>
           </td></tr>   
@@ -86,14 +86,14 @@
          <ul>
          <li>¿Cómo se ejecutaría sus implementaciones desde terminal(consola)? Por ejemplo en el IDE Eclipse se agrega un jar externo así:
               <ul>
-                   <li><img src="https://i.postimg.cc/VkzW91tY/imagen-2022-06-12-181405136.png?raw=true" alt="image_1" style witdh="150"; height="150"/></li>
+                   <li><img src="https://i.postimg.cc/VkzW91tY/imagen-2022-06-12-181405136.png?raw=true" alt="image_1"></li>
                    <li>¿Cómo lo haría desde la terminal?</li>
                 <li>Primero se compila el archivo de la siuiente manera:</br>
                     javac -cp PATH_TO_JAVAPLOT/dist/JavaPlot.jar test.java</br>
                     Para luego ejecutarlo de la siguiente manera: </br>
-                    java -cp PATH_TO_JAVAPLOT/dist/JavaPlot.jar:. test</li>
-                
- 	       </ul>
+                    java -cp PATH_TO_JAVAPLOT/dist/JavaPlot.jar:. test
+		</li>
+               </ul>
            </li>
          </ul>
         </td></tr>
