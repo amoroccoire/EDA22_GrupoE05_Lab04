@@ -27,13 +27,11 @@ public class Test1 {
 	A.get(i).setNext(A.get(i+1).getNext());
 	A.insert(A.get(i).getData(), i+2);
 	i--;
-	System.out.println("Valor: " + A.getTamaño() );
       }
       System.out.println(A);
       if(i == -1){
 	A.insertFirst(key.getData());
 	A.remove(1);
-	System.out.println(A.getTamaño());
       }
       else{
 	Node<E> aux;
@@ -41,7 +39,14 @@ public class Test1 {
 	key.setNext(aux);
 	A.get(i).setNext(key);
       }
-      System.out.println("Posicion: " + A);
+      System.out.println("Lista ordenada: " + A);
     }
+  }
+  public static  LinkedList<Integer> generarPeorCaso(int t) {
+    LinkedList<Integer> lista= new LinkedList<Integer>();
+    for (int i=0; i<t; i++) {
+      lista.insertLast(t-1); 
+    }
+    return lista;
   }
 }
