@@ -28,6 +28,8 @@ public class DoubleLinkedList<T> {
         nodo2.setDato(aux);
     }
 
+    //aca ira el metodo ordenamientoInsercion()
+
     public String toString(){
         String cadena = "";
 
