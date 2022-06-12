@@ -47,8 +47,9 @@ public class Sorted_List <T extends Comparable <T>> {
 			Node <T> next = current.getNext();// Coloca en next el nodo siguiente al que apunta la cabeza
 			insertCompare(current);
 			current=next;
-			t.add(System.nanoTime()-inicio);
+			
 		}
+		t.add(System.nanoTime()-inicio);
 		head=sorted;
 	}
 	public void insertCompare(Node <T> headAux) {// proceso que compara nodos y ordena
