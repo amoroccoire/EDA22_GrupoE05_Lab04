@@ -71,7 +71,7 @@
 	    </ul>
             <ul>
 	     <li><img src="https://i.postimg.cc/SxHfz8mM/imagen-2022-06-12-181131030.pngraw=true"></li>
- 	     <li>En este gráfico se muestra el tiempo que demora en ordenar 1000 listas del mas facil al mas complejo. </li>
+ 	     <li>En este gráfico se muestra el tiempo que demora en ordenar 500 listas del mas facil al mas complejo. </li>
 	    </ul>
            </li>
           </ul>
@@ -98,7 +98,7 @@
          </ul>
         </td></tr>
         <tr><td colspan="6">III. CONCLUSIONES
-           <li>conclusion </li>
+           <li>En conclusión tenemos que el ordenamiento por inserccion tiene un complejidad cuadrática y que trabaja de igual manera con la lista enlazada como con la lista doblemente enlazada.</li>
 </td></tr>
  </tbody>
 </table>
