@@ -24,7 +24,7 @@ public class LinkedList<E extends Comparable<E>> implements List<E> {
 
   public void insertFirst(E x) {
     this.raiz = new Node<E>(x, this.raiz);
-    this.tamaño+=1;
+    this.tamaño++;
   }
 
   public void remove(int indice) {

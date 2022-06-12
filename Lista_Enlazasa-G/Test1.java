@@ -22,17 +22,18 @@ public class Test1 {
     int i;
     for (int j=1; j<A.getTamaño(); j++) {
       key = A.get(j);
-      i=j-1;
+      i = j - 1;
       while(i >= 0 && A.get(i).getData().compareTo(key.getData())>0) {	
 	A.get(i).setNext(A.get(i+1).getNext());
-	A.insert(A.get(i).getData(), i+1);
-	i = i-1;
+	A.insert(A.get(i).getData(), i+2);
+	i--;
+	System.out.println("Valor: " + A.getTamaño() );
       }
       System.out.println(A);
-      if(i==-1){
+      if(i == -1){
 	A.insertFirst(key.getData());
 	A.remove(1);
-	System.out.println("Listo");
+	System.out.println(A.getTamaño());
       }
       else{
 	Node<E> aux;
@@ -40,7 +41,7 @@ public class Test1 {
 	key.setNext(aux);
 	A.get(i).setNext(key);
       }
+      System.out.println("Posicion: " + A);
     }
   }
-
 }
