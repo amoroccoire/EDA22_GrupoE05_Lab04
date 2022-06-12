@@ -9,7 +9,7 @@ public class DoubleLinkedList<T> {
     }
 
     public void push(T dato) {
-        Node<T> nodo = new Node<T>(nodo);
+        Node<T> nodo = new Node<T>(dato);
 
         if (cabeza != null) {
             cola.setNextNode(nodo);
