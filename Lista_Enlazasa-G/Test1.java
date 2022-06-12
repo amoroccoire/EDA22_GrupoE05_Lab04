@@ -1,20 +1,17 @@
 
+import java.util.*;
 public class Test1 {
 
   public static void main(String[] args) {
-    LinkedList<Integer> lint = new LinkedList<Integer>();
-    lint.insertFirst(10);
+    int tamano;
+
+    Scanner teclado = new Scanner( System.in );
+    System.out.print( "Introduzca el tamaño del arreglo: " );
+    tamano = teclado.nextInt();
+
+    LinkedList<Integer> lint = generarPeorCaso(tamano);
     System.out.println(lint);
-    lint.insertFirst(14);
-    System.out.println(lint);
-    lint.insertFirst(7);
-    System.out.println(lint);
-    lint.insertFirst(19);
-    System.out.println(lint);
-    lint.insertFirst(25);
-    System.out.println(lint);
-    lint.remove(9);
-    System.out.println(lint + "\n---------------------------------");
+    System.out.println("-------------------");
     insertionSort(lint);
   }
   public  static <E extends Comparable<E>> void insertionSort(LinkedList<E> A) {
@@ -39,14 +36,16 @@ public class Test1 {
 	key.setNext(aux);
 	A.get(i).setNext(key);
       }
-      System.out.println("Lista ordenada: " + A);
+      
+     System.out.println("Lista ordenada: " + A);
     }
   }
   public static  LinkedList<Integer> generarPeorCaso(int t) {
     LinkedList<Integer> lista= new LinkedList<Integer>();
-    for (int i=0; i<t; i++) {
-      lista.insertLast(t-1); 
+    for (int i = 0; i < t; i++) {
+      lista.insertLast(t-i-1); 
     }
+    System.out.println(lista.getTamaño());
     return lista;
   }
 }

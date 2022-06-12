@@ -34,6 +34,7 @@ public class LinkedList<E extends Comparable<E>> implements List<E> {
       for (; aux.getNext() != null; aux = aux.getNext())
 	;
       aux.setNext(new Node<E>(x));
+      this.tamaño++;
     }
   }
 
