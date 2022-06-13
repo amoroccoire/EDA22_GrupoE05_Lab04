@@ -130,7 +130,7 @@
 		</pre>
 		En la gráfica inferior se muestra el tiempo en ordenar segun el labortario 10000 casos.
 	     </li>
-	     <li><img src="https://i.postimg.cc/6qxqNWVg/Lista-Enlazada.jpg?raw=true"></li>
+	     <li><img src="https://i.postimg.cc/7h5q8MBx/Whats-App-Image-2022-06-12-at-8-15-16-PM.jpg?raw=true"></li>
  	     <li>En este gráfico se muestra el tiempo que demora en ordenar diez mil listas del mas facil al mas complejo. </li>
 	    </ul>
             <ul>
