@@ -66,19 +66,7 @@
           <ul>
           <li>I. Utilizar el tipo generico de Lista Enlazada para generar los peores casos y ejecutar el algoritmo de ordenamiento.
              <ul>
-	     <li><img src="https://i.postimg.cc/6qxqNWVg/Lista-Enlazada.jpg?raw=true"></li>
- 	     <li>En este gráfico se muestra el tiempo que demora en ordenar cien mil listas del mas facil al mas complejo. </li>
-	    </ul>
-            <ul>
-	     <li><img src="https://i.postimg.cc/SxHfz8mM/imagen-2022-06-12-181131030.pngraw=true"></li>
- 	     <li>En este gráfico se muestra el tiempo que demora en ordenar 500 listas del mas facil al mas complejo. </li>
-	    </ul>
-           </li>
-          </ul>
-          <ul>
-          <li>II. Utilizar el tipo generico de Doble Lista Enlazada para generar los peores casos y ejecutar el algoritmo de ordenamiento.
-          <ul>
-	     <li> Dentro de la clase genérica Sorted_List se han generado los métodos para realizar el gráfico con las listas de los peores casos a ordenar, de la mas simple a la mas compleja.
+		<li> Dentro de la clase genérica Sorted_List se han generado los métodos para realizar el gráfico con las listas de los peores casos a ordenar, de la mas simple a la mas compleja.
 		  Uno de los métodos es el generarListas.
 		<pre>
 		     <code> 
@@ -94,7 +82,6 @@
 			    public void worstCase(T data) {//crea una lista del peor caso a ordenar
 				int num =1;
 				Integer obj = (Integer) data;
-		
 			while(obj>0) {
 				Integer data2 = num;
 				Node<T> node = new Node<T>();
@@ -128,8 +115,8 @@
 		..........
 		............
 		50,49,48,47,........3,2,1
-		Dentro como se puede ver esta el método insertCompare, el cual es el que ordena cada lista
-		Resultado de 50 listas de caso mas simple a mas complejo a ordenar
+		Dentro como se puede ver esta el método insertCompare, el cual es el que ordena cada lista.
+		Resultado de 50 listas de caso mas simple a mas complejo a ordenar.
 		1
 		1,2
 		3,2,1
@@ -138,6 +125,18 @@
 		.........
 		1,2,3,...........47,48,49,50	
 	     </li>
+	     <li><img src="https://i.postimg.cc/6qxqNWVg/Lista-Enlazada.jpg?raw=true"></li>
+ 	     <li>En este gráfico se muestra el tiempo que demora en ordenar cien mil listas del mas facil al mas complejo. </li>
+	    </ul>
+            <ul>
+	     <li><img src="https://i.postimg.cc/SxHfz8mM/imagen-2022-06-12-181131030.pngraw=true"></li>
+ 	     <li>En este gráfico se muestra el tiempo que demora en ordenar 500 listas del mas facil al mas complejo. </li>
+	    </ul>
+           </li>
+          </ul>
+          <ul>
+          <li>II. Utilizar el tipo generico de Doble Lista Enlazada para generar los peores casos y ejecutar el algoritmo de ordenamiento.
+          <ul>
 	     <li><img src="img/isEmpty.png?raw=true" alt="image_1"></li>
 	      </ul>
            <li>En este metodo lo unico que sea hace es comparar la raiz, ya que si esta se encuentra vacia nos indica que no hay ningun elemento en la pila.</li>
