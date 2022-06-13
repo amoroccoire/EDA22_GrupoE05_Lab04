@@ -128,9 +128,10 @@
 		.........
 		1,2,3,...........47,48,49,50
 		</pre>
+		En la gráfica inferior se muestra el tiempo en ordenar segun el labortario 10000 casos.
 	     </li>
 	     <li><img src="https://i.postimg.cc/6qxqNWVg/Lista-Enlazada.jpg?raw=true"></li>
- 	     <li>En este gráfico se muestra el tiempo que demora en ordenar cien mil listas del mas facil al mas complejo. </li>
+ 	     <li>En este gráfico se muestra el tiempo que demora en ordenar diez mil listas del mas facil al mas complejo. </li>
 	    </ul>
             <ul>
 	     <li><img src="https://i.postimg.cc/SxHfz8mM/imagen-2022-06-12-181131030.pngraw=true"></li>
