@@ -78,6 +78,66 @@
           <ul>
           <li>II. Utilizar el tipo generico de Doble Lista Enlazada para generar los peores casos y ejecutar el algoritmo de ordenamiento.
           <ul>
+	     <li> Dentro de la clase genérica Sorted_List se han generado los métodos para realizar el gráfico con las listas de los peores casos a ordenar, de la mas simple a la mas compleja.
+		  Uno de los métodos es el generarListas.
+		<pre>
+		     <code> 
+			    public void generaListas(Integer data,ArrayList<Long>t) {
+				...
+				.....
+			    }   
+		     </code>
+		</pre>
+		  Este es el único que se ejecuta en el Main, dentro del método se genera el número de listas que se haya deseado se crean y se ordenan.
+		<pre>
+		     <code> 
+			    public void worstCase(T data) {//crea una lista del peor caso a ordenar
+				int num =1;
+				Integer obj = (Integer) data;
+		
+			while(obj>0) {
+				Integer data2 = num;
+				Node<T> node = new Node<T>();
+				node.setData((T) data2);
+				node.setNext(head);
+				head=node;
+				obj--;
+				num++;
+			}
+		     </code>
+		</pre>
+		 El método worstCase crea los nodos enlazados Ejemplo:  ...--> 5 --> 4 --> 3 --> 2 --> 1 -->  null  
+		 Para que luego se ejecute el método insertionSort  
+		<pre>
+		     <code> 
+			    public void insertionSort( Node <T> ref,ArrayList<Long>t) {
+				while(current != null) {
+				  	Node <T> next = current.getNext(); 
+					insertCompare(current);
+					current=next;
+				}
+			    }
+		     </code>
+		</pre>
+		Este método toma la lista enlazada de listas enlazadas de cuyos nodos se va a ordenar.
+		Ejemplo de 50 listas de caso mas simple a mas complejo a ordenar
+		1
+		2,1
+		3,2,1
+		........
+		..........
+		............
+		50,49,48,47,........3,2,1
+		Dentro como se puede ver esta el método insertCompare, el cual es el que ordena cada lista
+		Resultado de 50 listas de caso mas simple a mas complejo a ordenar
+		1
+		1,2
+		3,2,1
+		.......
+		........
+		.........
+		1,2,3,...........47,48,49,50	
+	     </li>
 	     <li><img src="img/isEmpty.png?raw=true" alt="image_1"></li>
 	      </ul>
            <li>En este metodo lo unico que sea hace es comparar la raiz, ya que si esta se encuentra vacia nos indica que no hay ningun elemento en la pila.</li>
