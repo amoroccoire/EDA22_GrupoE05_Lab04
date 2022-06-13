@@ -82,14 +82,14 @@
 			    public void worstCase(T data) {//crea una lista del peor caso a ordenar
 				int num =1;
 				Integer obj = (Integer) data;
-			while(obj>0) {
-				Integer data2 = num;
-				Node<T> node = new Node<T>();
-				node.setData((T) data2);
-				node.setNext(head);
-				head=node;
-				obj--;
-				num++;
+				while(obj>0) {
+				      Integer data2 = num;
+				      Node<T> node = new Node<T>();
+				      node.setData((T) data2);
+				      node.setNext(head);
+				      head=node;
+				      obj--;
+				      num++;
 			}
 		     </code>
 		</pre>
