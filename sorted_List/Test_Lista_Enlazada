@@ -8,10 +8,14 @@ import com.panayotis.gnuplot.JavaPlot;
 public class Test_Lista_Enlazada {
 
 	public static void main(String[] args) throws IOException {
-		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Ingrese la cantidad de listas de peores casos");
+		int cantidad = scan.nextInt();
 		Sorted_List<Integer> lista = new Sorted_List<>();
 		ArrayList<Long>tiempoInsercion=new ArrayList();
-		lista.generaListas(1000, tiempoInsercion);
+
+		lista.generaListas(cantidad, tiempoInsercion);
+
 		File gnu = null;
 		BufferedWriter bw = null;
 		gnu = new File("insercionEnlazado.txt");

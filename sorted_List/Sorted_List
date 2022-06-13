@@ -14,11 +14,7 @@ public class Sorted_List <T extends Comparable <T>> {
 			Sorted_List<Integer> lista = new Sorted_List<>();
 			lista.worstCase(aux);//debe empezar por le mas simple ---> ejemplo 10 , otro de 10,9 , otro de 10,9,8
 			aux++;
-			System.out.println("antes");
-			lista.display(lista.head);
 			lista.insertionSort(lista.head, t);
-			System.out.println("despues");
-			lista.display(lista.head);
 		}
 		
 		
