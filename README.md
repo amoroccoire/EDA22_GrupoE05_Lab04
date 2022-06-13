@@ -106,6 +106,7 @@
 			    }
 		     </code>
 		</pre>
+		<pre>
 		Este método toma la lista enlazada de listas enlazadas de cuyos nodos se va a ordenar.
 		Ejemplo de 50 listas de caso mas simple a mas complejo a ordenar
 		1
@@ -123,7 +124,8 @@
 		.......
 		........
 		.........
-		1,2,3,...........47,48,49,50	
+		1,2,3,...........47,48,49,50
+		</pre>	
 	     </li>
 	     <li><img src="https://i.postimg.cc/6qxqNWVg/Lista-Enlazada.jpg?raw=true"></li>
  	     <li>En este gráfico se muestra el tiempo que demora en ordenar cien mil listas del mas facil al mas complejo. </li>
