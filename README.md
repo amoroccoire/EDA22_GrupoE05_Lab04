@@ -106,9 +106,9 @@
 			    }
 		     </code>
 		</pre>
-		<pre>
 		Este método toma la lista enlazada de listas enlazadas de cuyos nodos se va a ordenar.
 		Ejemplo de 50 listas de caso mas simple a mas complejo a ordenar
+		<pre>
 		1
 		2,1
 		3,2,1
@@ -116,8 +116,10 @@
 		..........
 		............
 		50,49,48,47,........3,2,1
+		</pre>
 		Dentro como se puede ver esta el método insertCompare, el cual es el que ordena cada lista.
 		Resultado de 50 listas de caso mas simple a mas complejo a ordenar.
+		<pre>
 		1
 		1,2
 		3,2,1
