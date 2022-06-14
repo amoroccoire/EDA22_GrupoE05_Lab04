@@ -1,4 +1,4 @@
-public class DoubleLinkedList<T> {
+public class DoubleLinkedList<T extends Comparable<T>> {
 
     private Node<T> cabeza;
     private Node<T> cola;
@@ -28,7 +28,25 @@ public class DoubleLinkedList<T> {
         nodo2.setDato(aux);
     }
 
-    //aca ira el metodo ordenamientoInsercion()
+    public long ordenamientoInsercion(){
+        Node<T> puntero = cabeza;
+        Node<T> llave = null;
+
+        long inicio = System.nanoTime();
+        while (puntero != null) {
+            
+            llave = puntero.getNextNode();
+            
+            while (llave != null && llave.getPreviousNode() != null && llave.getDato().compareTo(llave.getPreviousNode().getDato()) < 0) {
+                intercambiar(llave, llave.getPreviousNode());
+                llave = llave.getPreviousNode();
+            }
+            puntero = puntero.getNextNode();
+        }
+        long fin = System.nanoTime();
+
+        return fin - inicio;
+    }
 
     public String toString(){
         String cadena = "";

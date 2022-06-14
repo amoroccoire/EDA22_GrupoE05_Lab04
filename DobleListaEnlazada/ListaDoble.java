@@ -1,3 +1,4 @@
+import java.util.Scanner;
 import java.util.ArrayList;
 
 import java.io.FileNotFoundException;
@@ -7,7 +8,9 @@ public class ListaDoble {
 
     public static void main(String[] args) throws FileNotFoundException { 
         
-        int numero = 10000; //se refiere a la cantidad de arreglos que contendran los peores casos
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Numero de arreglos: ");
+        int numero = sc.nextInt(); //se refiere a la cantidad de arreglos que contendran los peores casos
 
         ArrayList<DoubleLinkedList> listasD = new ArrayList<DoubleLinkedList>();
         String archivo = "archivo2.txt";
