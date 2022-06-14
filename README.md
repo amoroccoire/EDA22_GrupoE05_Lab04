@@ -141,10 +141,39 @@
           </ul>
           <ul>
           <li>II. Utilizar el tipo generico de Doble Lista Enlazada para generar los peores casos y ejecutar el algoritmo de ordenamiento.
+	  <p>La carpeta <a href="DobleListaEnlazada/">DobleListaEnlazada</a> contiene una version de la implementacion requerida para resolver el ejercicio</p>
+	  <p>La carpeta <a href="DoblyListaEnlazada/">DoblyListaEnlazada</a> contiene otra version del mismo ejercicio pero no esta completa</p>
+	  <p>Para explicar el ejercicio se usaran los archivos de la carpeta <a href="DobleListaEnlazada/"></a></p>
           <ul>
-	     <li><img src="img/isEmpty.png?raw=true" alt="image_1"></li>
+	     <li><img src="https://drive.google.com/file/d/1adY1409GcnVQ-bIXp_AsJN_yKi7iJ60Z/view?usp=sharing"></li>
 	      </ul>
-           <li>En este metodo lo unico que sea hace es comparar la raiz, ya que si esta se encuentra vacia nos indica que no hay ningun elemento en la pila.</li>
+           <li>Para que la grafica se observe, ejecute la clase <a href="DobleListaEnlazada/ListaDoble.java">ListaDoble.java</a>
+	   	<br>
+	   	Se pedira cuantos arreglos se desea probar para la grafica. Para el caso presentado en el imagen, se ingresó 10000, el algoritmo se encargara de generar los peores casos para cada arreglo; desde 1 solo elemento hasta n elementos
+		<br>
+		La clase <a href="DobleListaEnlazada/DoubleLinkedList.java">DoubleLinkedList.java</a> cuenta con los metodos:
+		<br>
+		<code>push(T dato)</code>: Recibe un dato generico
+		<br>
+		Si la lista esta vacia, los punteros "cabeza" y "cola" apuntaran al nuevo nodo ingresado
+		<br>
+		<pre>
+		<code>
+		cabeza = nodo;
+		cola = nodo;
+		</code>
+		</pre>
+		<br>
+		De lo contrario el puntero izquierdo del nodo debera apuntar a la cola y despues este debera actualizarse
+		<br>
+		<code>intercambiar(Node<T> nodo1, Node<T> nodo2)</code>: Recibe dos nodos e intercambia sus datos
+		<br>
+		EL metodo intercambia los datos, para ello se ayuda de una variable auxiliar
+		<br>
+		<code>ordenamientoInsercion()</code>: Ordena la lista doblemente enlazada ascendentemente
+		<br>
+		Se inicializa un puntero con el valor de la cabeza y el puntero que sera de llave como 'null' esta llave se encargara de comparar el nodo con los demas. Finalmente se retorna el tiempo en nanosegundos tomado para ejecutar todo el ordenamiento.
+	   </li>
           </td></tr>   
         <tr><td colspan="6">II. SOLUCIÓN DEL CUESTIONARIO
          <ul>
