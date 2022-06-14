@@ -30,18 +30,18 @@ public class DoubleLinkedList<T> {
 
     public long ordenamientoInsercion(){
         Node<T> puntero = cabeza;
-        Node<llave> = nulñl;
+        Node<T> llave = null;
 
         long inicio = System.nanoTime();
-        while (nodo1 != null) {
+        while (puntero != null) {
             
-            llave = nodo1.getNextNode();
+            llave = puntero.getNextNode();
             
             while (llave != null && llave.getPreviousNode() != null && llave.getDato().compareTo(llave.getPreviousNode().getDato()) < 0) {
                 intercambiar(llave, llave.getPreviousNode());
                 llave = llave.getPreviousNode();
             }
-            nodo1 = nodo1.getNextNode();
+            puntero = puntero.getNextNode();
         }
         long fin = System.nanoTime();
 
