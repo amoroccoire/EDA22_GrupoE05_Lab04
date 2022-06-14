@@ -1,4 +1,4 @@
-public class DoubleLinkedList<T> {
+public class DoubleLinkedList<T extends Comparable<T>> {
 
     private Node<T> cabeza;
     private Node<T> cola;
