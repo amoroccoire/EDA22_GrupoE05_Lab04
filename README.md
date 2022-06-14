@@ -145,7 +145,7 @@
 	  <p>La carpeta <a href="DoblyListaEnlazada/">DoblyListaEnlazada</a> contiene otra version del mismo ejercicio pero no esta completa</p>
 	  <p>Para explicar el ejercicio se usaran los archivos de la carpeta <a href="DobleListaEnlazada/">DobleListaEnlazada</a></p>
           <ul>
-	     <li><img src="/Images/ordenamientoDobleListaEnlazada.png width="808" height="588""></li>
+	     <li><img src="/Images/ordenamientoDobleListaEnlazada.png" width="808" height="588"></li>
 	      </ul>
            <li>Para que la grafica se observe, ejecute la clase <a href="DobleListaEnlazada/ListaDoble.java">ListaDoble.java</a>
 	   	<br>
