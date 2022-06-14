@@ -143,7 +143,7 @@
           <li>II. Utilizar el tipo generico de Doble Lista Enlazada para generar los peores casos y ejecutar el algoritmo de ordenamiento.
 	  <p>La carpeta <a href="DobleListaEnlazada/">DobleListaEnlazada</a> contiene una version de la implementacion requerida para resolver el ejercicio</p>
 	  <p>La carpeta <a href="DoblyListaEnlazada/">DoblyListaEnlazada</a> contiene otra version del mismo ejercicio pero no esta completa</p>
-	  <p>Para explicar el ejercicio se usaran los archivos de la carpeta <a href="DobleListaEnlazada/"></a></p>
+	  <p>Para explicar el ejercicio se usaran los archivos de la carpeta <a href="DobleListaEnlazada/">DobleListaEnlazada</a></p>
           <ul>
 	     <li><img src="https://drive.google.com/file/d/1adY1409GcnVQ-bIXp_AsJN_yKi7iJ60Z/view?usp=sharing"></li>
 	      </ul>
