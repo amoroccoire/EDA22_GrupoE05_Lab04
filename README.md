@@ -157,12 +157,11 @@
 		<br>
 		Si la lista esta vacia, los punteros "cabeza" y "cola" apuntaran al nuevo nodo ingresado
 		<br>
-		<pre>
 		<code>
 		cabeza = nodo;
+		<br>
 		cola = nodo;
 		</code>
-		</pre>
 		<br>
 		De lo contrario el puntero izquierdo del nodo debera apuntar a la cola y despues este debera actualizarse
 		<br>
