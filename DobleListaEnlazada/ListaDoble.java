@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.util.ArrayList;
-
+import com.panayotis.gnuplot.JavaPlot;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 
@@ -29,7 +29,9 @@ public class ListaDoble {
 
         oS.close();
 
-        //el grafico sera hecho por otro miembro solo se genera el archivo con los datos necesarios
+        JavaPlot p = new JavaPlot();
+		p.addPlot("\"archivo2.txt\" with lines");
+		p.plot();
     }
 }
 
